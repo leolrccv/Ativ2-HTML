@@ -51,7 +51,7 @@ function mostrarDados() {
     if (estadoCivil.toUpperCase() == "CASADO") {
         window.alert("Necessário enviar documentação do cônjuge")
     }
-
+    let id = Math.floor(Math.random()*10**4)
     let nome = document.getElementById("nome").value
     let telefone = document.getElementById("telefone").value
     let cep = document.getElementById("cep").value
@@ -62,7 +62,7 @@ function mostrarDados() {
     let numero = document.getElementById("numero").value
 
     document.getElementById("dados").innerHTML = `========== DADOS CADASTRADOS ==========<br>
-    Nome: ${nome}<br>Telefone: ${telefone}<br>Idade: ${idade}<br>Salario: ${salario}<br>Estado Civil: ${estadoCivil}<br>
+    ID: ${id}<br>Nome: ${nome}<br>Telefone: ${telefone}<br>Idade: ${idade}<br>Salario: ${salario}<br>Estado Civil: ${estadoCivil}<br>
     CEP: ${cep}<br>Cidade: ${cidade}, ${uf}<br>Endereço: ${logradouro}, ${numero}<br>Bairro: ${bairro}<br>`
     }
 }
