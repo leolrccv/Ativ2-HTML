@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="script.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="parte">
+        <form>
+            <table>
+                <td><input type="text" id="nome" name="nome" placeholder="Nome"></td>
+                <td><input type="text" name="telefone" id="telefone" placeholder="Telefone"></td>
+                <td><input type="text" name="idade" id="idade" placeholder="Idade"></td>
+            </table>
+            <table>
+                <td><input type="text" name="estadoCivil" id="estadoCivil" placeholder="Estado Civil"></td>
+                <td><input type="text" name="salario" id="salario" placeholder="Salário"></td>
+            </table>
+                <table>
+                <tr>
+                    <td><input type="text" id="cep" name="cep" placeholder="CEP"></td>
+                    <td><input type="button" value="Completar Endereço automaticamente" onclick="findCEP()"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="text" id="logradouro" name="lograduro" size="46" placeholder="Logradouro"></td>
+                    <td><input type="text" id="bairro" name="bairro" placeholder="Bairro"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="text" id="cidade" name="cidade" placeholder="Cidade"></td>
+                    <td><input type="text" id="uf" name="uf" placeholder="UF"></td>
+                    <td><input type="text" id="numero" name="numero" placeholder="Número"></td></tr>
+                </tr>
+                <td><input type="button" value="enviar dados" onclick="mostrarDados()"></td>
+            </table>
+        </form>
+        <div id="condicoes">
+            <p id="menor18"></p>
+            <p id="imposto"></p>
+        </div>
+        <div id="impressao">
+            <p id="dados"></p>
+            <a id="inicio" href="principal.html">Voltar para página inicial</a>
+        </div>
+    </div>
+    
+</body>
+</html>

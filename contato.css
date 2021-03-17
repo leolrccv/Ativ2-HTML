@@ -1,0 +1,48 @@
+body{
+    background-image: url("fundo.jpg");
+    margin: 0;
+}
+#geral{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 40%;
+    background-color: black;
+}
+
+#geral p{
+    position: relative;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+#inicio{
+    position: absolute;
+    margin-top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;  
+}
+h3{
+    color:white;
+    position: relative;
+    text-align: center;
+    font-size: 140%;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 10%;
+}
+
+#msg{
+    margin-top: 10%;
+}
+
+#digite{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

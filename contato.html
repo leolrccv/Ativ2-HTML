@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contato.css">
+    <script src="script.js"></script>
+    <title>Pagina Inicial</title>
+</head>
+<body>
+    <div id="geral">
+        <h3>INFORMAÇÕES PARA CONTATO</h3>
+        <p>E-mail: space5@space12345.com.br<br>Whatsapp: (16)93436-9374</p>
+        <p id="msg">Ou nos envie uma mensagem abaixo:</p>
+        <div id="digite">
+            <table>
+                <tr>
+                    <td><input type="text" id="nome" name="nome" size="25"placeholder="Digite seu Nome"></td>
+                    <td><input type="text" id="email" name="email" size="26" placeholder="Digite seu E-mail"></td>
+                </tr>
+            </table>
+            <textarea rows="20" cols="60" maxlength="500" placeholder="Digite aqui sua mensagem"></textarea>
+            <input type="button" value="Enviar Mensagem" onclick="enviarMsg()">
+        </div>
+    </div>
+    <a id="inicio" href="principal.html">Voltar para página inicial</a>
+</body>
+</html>
